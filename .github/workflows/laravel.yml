@@ -23,7 +23,7 @@ jobs:
       run: composer clear-cache
     - name: Install Dependencies
       run: composer install -vvv
-      - name: Clean Environment
+    - name: Clean Environment
       run: |
         rm -rf vendor/
         rm -f composer.lock
